@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeison Garcia — Ingeniero de Sistemas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">JG<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre mí</a></li>
+    <li><a href="#projects">Proyectos</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Disponible para proyectos</div>
+    <h1 class="hero-name">
+      Jeison<br>
+      <span class="highlight">Garcia</span>
+    </h1>
+    <div class="hero-role">
+      <span>Ing. de Sistemas</span>
+      <span class="sep">/</span>
+      <span>Universidad del Magdalena</span>
+      <span class="sep">/</span>
+      <span>Colombia 🇨🇴</span>
+    </div>
+    <p class="hero-desc">
+      Construyo soluciones digitales donde el código limpio y el análisis de datos crean impacto real. Especializado en desarrollo de software y visualización de datos.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">Ver proyectos →</a>
+      <a href="#contact" class="btn btn-outline">Contactarme</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid fade-in">
+    <div class="about-visual">
+      <div class="about-card">
+        <div class="about-avatar">JG</div>
+        <div class="about-name-card">Jeison Garcia</div>
+        <div class="about-role-card">Systems Engineer · Data Analyst</div>
+        <div class="about-info-row">
+          <span class="about-info-icon">📍</span>
+          <div>
+            <div class="about-info-label">Ubicación</div>
+            <div class="about-info-val">Santa Marta, Colombia</div>
+          </div>
+        </div>
+        <div class="about-info-row">
+          <span class="about-info-icon">🎓</span>
+          <div>
+            <div class="about-info-label">Universidad</div>
+            <div class="about-info-val">Univ. del Magdalena</div>
+          </div>
+        </div>
+        <div class="about-info-row">
+          <span class="about-info-icon">💼</span>
+          <div>
+            <div class="about-info-label">Estado</div>
+            <div class="about-info-val" style="color: var(--accent);">● Disponible</div>
+          </div>
+        </div>
+        <div class="about-info-row">
+          <span class="about-info-icon">🌐</span>
+          <div>
+            <div class="about-info-label">Idiomas</div>
+            <div class="about-info-val">Español · Inglés</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <div class="section-label">Sobre mí</div>
+      <h2>Ingeniero apasionado por<br>el código y los datos.</h2>
+      <p>
+        Soy Ingeniero de Sistemas graduado de la Universidad del Magdalena, con pasión por crear soluciones tecnológicas elegantes y efectivas. Me especializo tanto en el desarrollo de software como en el análisis y visualización de datos.
+      </p>
+      <p>
+        Mi enfoque combina pensamiento analítico con creatividad técnica para construir productos que no solo funcionan bien, sino que también son intuitivos y visualmente impactantes.
+      </p>
+      <div class="skills-grid">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">Tableau</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">D3.js</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header fade-in">
+    <div>
+      <div class="section-label">Portafolio</div>
+      <h2 class="section-title">Proyectos</h2>
+    </div>
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="dev">Desarrollo</button>
+      <button class="filter-btn" data-filter="data">Datos</button>
+    </div>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- Project 1: Dev -->
+    <div class="project-card fade-in" data-category="dev">
+      <div class="project-preview">
+        <div class="preview-code">
+<span class="cm">// Sistema de Gestión de Inventario</span><br>
+<span class="kw">const</span> <span class="var">inventory</span> = <span class="kw">new</span> <span class="fn">InventoryManager</span>({<br>
+&nbsp;&nbsp;<span class="str">db</span>: <span class="fn">PostgreSQL</span>,<br>
+&nbsp;&nbsp;<span class="str">cache</span>: <span class="fn">Redis</span><br>
+});<br><br>
+<span class="kw">async function</span> <span class="fn">updateStock</span>(<span class="var">item</span>) {<br>
+&nbsp;&nbsp;<span class="kw">const</span> <span class="var">result</span> = <span class="kw">await</span> <span class="var">inventory</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;.<span class="fn">find</span>(<span class="var">item</span>.<span class="var">sku</span>)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;.<span class="fn">update</span>(<span class="var">item</span>.<span class="var">qty</span>);<br>
+&nbsp;&nbsp;<span class="kw">return</span> <span class="var">result</span>;<br>
+}
+        </div>
+        <div class="preview-overlay"></div>
+        <span class="project-type-badge badge-dev">Desarrollo</span>
+      </div>
+      <div class="project-body">
+        <h3 class="project-title">Sistema de Gestión de Inventario</h3>
+        <p class="project-desc">Aplicación web full-stack para control de inventario en tiempo real con notificaciones automáticas y reportes exportables.</p>
+        <div class="project-tech">
+          <span class="tech-pill">Node.js</span>
+          <span class="tech-pill">React</span>
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">Redis</span>
+          <span class="tech-pill">Docker</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ Demo</a>
+          <a href="#" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Data -->
+    <div class="project-card fade-in" data-category="data">
+      <div class="project-preview">
+        <div class="preview-chart" id="chart1">
+          <div class="chart-bar" style="height: 60%; background: rgba(0,229,160,0.6);"></div>
+          <div class="chart-bar" style="height: 85%; background: rgba(0,229,160,0.8);"></div>
+          <div class="chart-bar" style="height: 45%; background: rgba(0,229,160,0.5);"></div>
+          <div class="chart-bar" style="height: 95%; background: rgba(0,229,160,1);"></div>
+          <div class="chart-bar" style="height: 70%; background: rgba(0,229,160,0.7);"></div>
+          <div class="chart-bar" style="height: 55%; background: rgba(0,229,160,0.55);"></div>
+          <div class="chart-bar" style="height: 80%; background: rgba(0,229,160,0.75);"></div>
+        </div>
+        <div class="preview-overlay"></div>
+        <span class="project-type-badge badge-data">Análisis de Datos</span>
+      </div>
+      <div class="project-body">
+        <h3 class="project-title">Dashboard de Ventas Retail</h3>
+        <p class="project-desc">Dashboard interactivo para análisis de ventas con segmentación de clientes, tendencias estacionales y proyecciones de demanda.</p>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Pandas</span>
+          <span class="tech-pill">Power BI</span>
+          <span class="tech-pill">DAX</span>
+          <span class="tech-pill">SQL</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ Ver Dashboard</a>
+          <a href="#" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: Dev -->
+    <div class="project-card fade-in" data-category="dev">
+      <div class="project-preview">
+        <div class="preview-code">
+<span class="cm">// API REST — Autenticación JWT</span><br>
+<span class="kw">app</span>.<span class="fn">post</span>(<span class="str">'/api/auth'</span>,<br>
+&nbsp;<span class="fn">validateBody</span>(<span class="var">loginSchema</span>),<br>
+&nbsp;<span class="kw">async</span> (<span class="var">req</span>, <span class="var">res</span>) => {<br>
+&nbsp;&nbsp;<span class="kw">const</span> <span class="var">user</span> = <span class="kw">await</span> <span class="fn">findUser</span>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="var">req</span>.<span class="var">body</span>.<span class="var">email</span><br>
+&nbsp;&nbsp;);<br>
+&nbsp;&nbsp;<span class="kw">const</span> <span class="var">token</span> = <span class="fn">jwt</span>.<span class="fn">sign</span>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="var">id</span>: <span class="var">user</span>.<span class="var">id</span> }, <span class="var">SECRET</span><br>
+&nbsp;&nbsp;);<br>
+&nbsp;&nbsp;<span class="var">res</span>.<span class="fn">json</span>({ <span class="var">token</span> });<br>
+});
+        </div>
+        <div class="preview-overlay"></div>
+        <span class="project-type-badge badge-dev">Desarrollo</span>
+      </div>
+      <div class="project-body">
+        <h3 class="project-title">API REST — Plataforma E-learning</h3>
+        <p class="project-desc">Backend escalable para plataforma de cursos online con autenticación JWT, gestión de contenido y seguimiento de progreso.</p>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">FastAPI</span>
+          <span class="tech-pill">JWT</span>
+          <span class="tech-pill">MongoDB</span>
+          <span class="tech-pill">AWS</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ Demo</a>
+          <a href="#" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4: Data -->
+    <div class="project-card fade-in" data-category="data">
+      <div class="project-preview">
+        <div class="preview-chart" style="flex-direction: column; gap: 10px; justify-content: center;">
+          <div style="display: flex; gap: 6px; align-items: center; width: 100%;">
+            <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; color: #6e7681; width: 60px; text-align: right; flex-shrink: 0;">Región A</div>
+            <div style="height: 18px; border-radius: 2px; background: rgba(123,97,255,0.8); width: 75%;"></div>
+          </div>
+          <div style="display: flex; gap: 6px; align-items: center; width: 100%;">
+            <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; color: #6e7681; width: 60px; text-align: right; flex-shrink: 0;">Región B</div>
+            <div style="height: 18px; border-radius: 2px; background: rgba(123,97,255,0.6); width: 55%;"></div>
+          </div>
+          <div style="display: flex; gap: 6px; align-items: center; width: 100%;">
+            <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; color: #6e7681; width: 60px; text-align: right; flex-shrink: 0;">Región C</div>
+            <div style="height: 18px; border-radius: 2px; background: rgba(123,97,255,0.9); width: 90%;"></div>
+          </div>
+          <div style="display: flex; gap: 6px; align-items: center; width: 100%;">
+            <div style="font-family: 'DM Mono', monospace; font-size: 0.6rem; color: #6e7681; width: 60px; text-align: right; flex-shrink: 0;">Región D</div>
+            <div style="height: 18px; border-radius: 2px; background: rgba(123,97,255,0.5); width: 42%;"></div>
+          </div>
+        </div>
+        <div class="preview-overlay"></div>
+        <span class="project-type-badge badge-data">Análisis de Datos</span>
+      </div>
+      <div class="project-body">
+        <h3 class="project-title">Análisis Epidemiológico Regional</h3>
+        <p class="project-desc">Análisis y visualización de datos de salud pública en la región Caribe colombiana. Identificación de patrones y zonas de riesgo.</p>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">GeoPandas</span>
+          <span class="tech-pill">Plotly</span>
+          <span class="tech-pill">Tableau</span>
+          <span class="tech-pill">R</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ Ver análisis</a>
+          <a href="#" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5: Dev -->
+    <div class="project-card fade-in" data-category="dev">
+      <div class="project-preview">
+        <div class="preview-code">
+<span class="cm">// Scraper + NLP Pipeline</span><br>
+<span class="kw">import</span> { <span class="fn">Pipeline</span> } <span class="kw">from</span> <span class="str">'@huggingface/hub'</span>;<br><br>
+<span class="kw">const</span> <span class="var">sentiment</span> = <span class="kw">new</span> <span class="fn">Pipeline</span>(<br>
+&nbsp;&nbsp;<span class="str">'sentiment-analysis'</span>,<br>
+&nbsp;&nbsp;<span class="str">'bert-base-spanish'</span><br>
+);<br><br>
+<span class="kw">const</span> <span class="var">results</span> = <span class="kw">await</span> <span class="var">sentiment</span><br>
+&nbsp;&nbsp;.<span class="fn">batch</span>(<span class="var">tweets</span>)<br>
+&nbsp;&nbsp;.<span class="fn">classify</span>();
+        </div>
+        <div class="preview-overlay"></div>
+        <span class="project-type-badge badge-dev">Desarrollo</span>
+      </div>
+      <div class="project-body">
+        <h3 class="project-title">Analizador de Sentimientos Twitter</h3>
+        <p class="project-desc">Herramienta de NLP para análisis de sentimientos en tweets en español. Clasifica opiniones en tiempo real con modelos BERT.</p>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">HuggingFace</span>
+          <span class="tech-pill">BERT</span>
+          <span class="tech-pill">FastAPI</span>
+          <span class="tech-pill">React</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ Demo</a>
+          <a href="#" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 6: Data -->
+    <div class="project-card fade-in" data-category="data">
+      <div class="project-preview">
+        <div class="preview-chart" style="position: relative; padding: 1rem;">
+          <svg viewBox="0 0 200 140" style="width: 100%; height: 100%;">
+            <polyline points="10,120 35,90 60,100 85,60 110,70 135,35 160,45 185,15"
+              fill="none" stroke="rgba(0,229,160,0.9)" stroke-width="2.5" stroke-linejoin="round"/>
+            <polyline points="10,120 35,90 60,100 85,60 110,70 135,35 160,45 185,15"
+              fill="url(#areaGrad)" stroke="none"/>
+            <defs>
+              <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="rgba(0,229,160,0.3)"/>
+                <stop offset="100%" stop-color="rgba(0,229,160,0)"/>
+              </linearGradient>
+            </defs>
+            <polyline points="10,120 185,15 185,140 10,140" fill="url(#areaGrad)" stroke="none"/>
+            <line x1="10" y1="0" x2="10" y2="140" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <line x1="60" y1="0" x2="60" y2="140" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <line x1="110" y1="0" x2="110" y2="140" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <line x1="160" y1="0" x2="160" y2="140" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="preview-overlay"></div>
+        <span class="project-type-badge badge-data">Análisis de Datos</span>
+      </div>
+      <div class="project-body">
+        <h3 class="project-title">KPI Dashboard — Sector Turístico</h3>
+        <p class="project-desc">Dashboard de métricas para empresas turísticas en Santa Marta. Monitoreo de ocupación, ingresos y satisfacción de huéspedes.</p>
+        <div class="project-tech">
+          <span class="tech-pill">Power BI</span>
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Excel</span>
+          <span class="tech-pill">DAX</span>
+          <span class="tech-pill">MySQL</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ Ver Dashboard</a>
+          <a href="#" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stats-inner">
+    <div class="stat-item fade-in">
+      <div class="stat-number" data-target="6">0</div>
+      <div class="stat-label">Proyectos completados</div>
+    </div>
+    <div class="stat-item fade-in">
+      <div class="stat-number" data-target="3">0</div>
+      <div class="stat-label">Años de experiencia</div>
+    </div>
+    <div class="stat-item fade-in">
+      <div class="stat-number" data-target="10">0</div>
+      <div class="stat-label">Tecnologías dominadas</div>
+    </div>
+    <div class="stat-item fade-in">
+      <div class="stat-number" data-target="100">0</div>
+      <div class="stat-label">Commits este año</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="position: relative;">
+  <div class="contact-glow"></div>
+  <div class="section-label" style="justify-content: center;">Hablemos</div>
+  <h2 class="section-title fade-in">¿Tienes un proyecto<br>en mente?</h2>
+  <p class="section-desc fade-in">Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales. ¡No dudes en escribirme!</p>
+  <a href="mailto:jeison@email.com" class="contact-email fade-in">jeison@email.com</a>
+  <div class="contact-links fade-in">
+    <a href="#" class="btn btn-primary">Enviar mensaje →</a>
+    <a href="#" class="btn btn-outline">LinkedIn</a>
+    <a href="#" class="btn btn-outline">GitHub</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2026 Jeison Garcia — Santa Marta, Colombia 🇨🇴</span>
+  <span>Diseñado & desarrollado con ♥</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
