@@ -28,7 +28,7 @@
     overflow-x: hidden;
   }
 
-  /* ── NOISE OVERLAY ── */
+  /* ── SUPERPOSICION DE RUIDO ── */
   body::before {
     content: '';
     position: fixed;
@@ -269,7 +269,7 @@
     50% { opacity: 1; transform: scaleY(1); }
   }
 
-  /* ── SECTION BASE ── */
+  /* ── SECCION BASE ── */
   section {
     padding: 7rem 3rem;
     position: relative;
@@ -308,7 +308,7 @@
     line-height: 1.7;
   }
 
-  /* ── ABOUT ── */
+  /* ── ACERCA ── */
   #about {
     background: var(--surface);
     border-top: 1px solid var(--border);
@@ -428,7 +428,7 @@
     background: rgba(0,229,160,0.05);
   }
 
-  /* ── PROJECTS ── */
+  /* ── PROYECTOS ── */
   #projects { max-width: 1200px; margin: 0 auto; }
   #projects > * { max-width: 1200px; }
 
@@ -634,7 +634,7 @@
   }
   .project-link:hover { color: var(--accent); }
 
-  /* ── STATS / COUNTERS ── */
+  /* ── ESTADISTICAS / CONTADORES ── */
   #stats {
     background: var(--surface);
     border-top: 1px solid var(--border);
@@ -669,7 +669,7 @@
     text-transform: uppercase;
   }
 
-  /* ── CONTACT ── */
+  /* ── CONTACT0 ── */
   #contact {
     max-width: 700px;
     margin: 0 auto;
@@ -708,7 +708,7 @@
   }
   .contact-email:hover { opacity: 0.7; }
 
-  /* ── FOOTER ── */
+  /* ── PIE DE PAGINA ── */
   footer {
     border-top: 1px solid var(--border);
     padding: 2rem 3rem;
@@ -738,7 +738,7 @@
     transform: translateY(0);
   }
 
-  /* ── MOBILE ── */
+  /* ── MOVIL ── */
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { gap: 1.5rem; }
