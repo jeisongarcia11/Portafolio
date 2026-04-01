@@ -1,4 +1,4 @@
-  // Custom cursor
+  // Personalización del cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
   let mx = 0, my = 0, rx = 0, ry = 0;
@@ -20,7 +20,7 @@
     el.addEventListener('mouseleave', () => cursor.style.transform = 'scale(1)');
   });
 
-  // Intersection Observer for fade-in
+  // Intersection Observer para fade-in
   const observer = new IntersectionObserver(entries => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
@@ -30,7 +30,7 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  // Filter projects
+  // Filtro de proyectos
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
   filterBtns.forEach(btn => {
@@ -49,7 +49,7 @@
     });
   });
 
-  // Counter animation
+  // Animación de contadores
   function animateCounter(el, target) {
     let current = 0;
     const step = target / 40;
